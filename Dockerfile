@@ -6,4 +6,4 @@ RUN mkdir /home/inspec
 
 WORKDIR /home/inspec
 
-CMD inspec exec
+CMD inspec exec ./
