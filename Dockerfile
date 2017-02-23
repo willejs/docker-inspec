@@ -1,6 +1,7 @@
 FROM ruby:2.1
 
-RUN gem install inspec -v 0.9.10 --no-ri --no-rdoc
+ARG INSPEC_VERSION
+RUN gem install inspec -v ${INSPEC_VERSION} --no-ri --no-rdoc
 
 RUN mkdir /home/inspec
 
